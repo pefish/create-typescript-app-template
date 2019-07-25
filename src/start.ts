@@ -1,3 +1,7 @@
 import '@pefish/js-node-assist'
+import Starter from '@pefish/js-util-starter'
 
-global.logger.info(`test`)
+Starter.startAsync(async () => {
+  global.logger.info(`test`)
+}, null, true)
+
