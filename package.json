@@ -1,0 +1,20 @@
+{
+  "name": "template",
+  "version": "0.0.1",
+  "dependencies": {
+    "@pefish/js-node-assist": "^0.6.6"
+  },
+  "scripts": {
+    "build": "rm -rf lib && tsc",
+    "start": "ts-node src/start.ts",
+    "test": "mocha --timeout 20000 --require ts-node/register src/**/*.test.ts",
+    "t": "mocha --timeout 20000 --require ts-node/register"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^11.13.7",
+    "ts-node": "^8.1.0",
+    "typescript": "^3.4.5"
+  }
+}
