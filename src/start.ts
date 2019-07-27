@@ -5,3 +5,4 @@ Starter.startAsync(async () => {
   global.logger.info(`test`)
 }, null, true)
 
+
