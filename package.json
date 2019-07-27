@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "rm -rf lib && tsc",
-    "start": "ts-node src/start.ts",
+    "start": "NODE_CONFIG=`pwd`/config/local.json NODE_SECRET=`pwd`/secret/local.json nodemon --ignore tests --exec ts-node src/start.ts",
     "test": "mocha --timeout 20000 --require ts-node/register src/**/*.test.ts",
     "t": "mocha --timeout 20000 --require ts-node/register",
     "docker": "docker build -t template ."
@@ -17,6 +17,7 @@
     "@types/chai": "^4.1.7",
     "@types/mocha": "^5.2.6",
     "@types/node": "^11.13.7",
+    "nodemon": "^1.19.1",
     "ts-node": "^8.1.0",
     "typescript": "^3.4.5"
   }
