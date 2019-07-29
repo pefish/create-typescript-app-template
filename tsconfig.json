@@ -19,7 +19,8 @@
     "typeRoots": [
       "node_modules/@types",
       "node_modules/@pefish"
-    ]
+    ],
+    "downlevelIteration": true
   },
   "include": [
     "src/**/*"
