@@ -15,6 +15,14 @@
     "@pefish/js-error" "^0.1.1"
     bignumber.js "^8.1.1"
 
+"@pefish/js-node-assist@^0.6.9":
+  version "0.6.9"
+  resolved "https://registry.yarnpkg.com/@pefish/js-node-assist/-/js-node-assist-0.6.9.tgz#60d50c0f82469441d4cd22b51f2645585170f414"
+  integrity sha512-acqJwvoBDVem8hqxJ7ctdPoRuuyPLXEFjPeIzQy12x+zs4ktlYqQx0p+cH61pILRM4Z0RDDeK6MZYRSUDp6lAA==
+  dependencies:
+    "@pefish/js-error" "^0.1.1"
+    bignumber.js "^8.1.1"
+
 "@pefish/js-util-config@^0.0.2":
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/@pefish/js-util-config/-/js-util-config-0.0.2.tgz#f019727144609bb11580ad34daba1c00ad5c56cd"
