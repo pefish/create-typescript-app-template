@@ -7,29 +7,25 @@
   resolved "https://registry.yarnpkg.com/@pefish/js-error/-/js-error-0.1.1.tgz#d3e6f4a1362206aaf73afd628465364c3a581ed2"
   integrity sha512-JNLY0twr0fVEnGgrMetZsBZrStDGmHDX0dY9amDChTzVqrGEd6dvpzkR9BxINGhWgeAX6naTzI2FZn3ZwGlrsw==
 
-"@pefish/js-node-assist@^0.6.6":
-  version "0.6.6"
-  resolved "https://registry.yarnpkg.com/@pefish/js-node-assist/-/js-node-assist-0.6.6.tgz#62673762c0dcc8ce3faf20c8bb777008fb69a084"
-  integrity sha512-IvdZCVDZXi2oc25XlKEHC7bCMaTNyDmYN+wPpcRQOEpa1A4JEsscIVWbw33zNMeKWuOfVWdFdJopgxwchRHx3A==
+"@pefish/js-error@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@pefish/js-error/-/js-error-0.1.2.tgz#89913c01f960318fa5108e79d99c27ad90b4430f"
+  integrity sha512-JFM3pW2MhGwOwdaSfUw79DsE52oh27meYzL07B/gkX7+oF0ByVs1/BuEFMBaTk5RMnMijN0lCEuCpfZgcShO3A==
+
+"@pefish/js-node-assist@^0.6.11":
+  version "0.6.11"
+  resolved "https://registry.yarnpkg.com/@pefish/js-node-assist/-/js-node-assist-0.6.11.tgz#b518afc950f145cea7c87262520baf48aa95ea85"
+  integrity sha512-osPSF2A4cBiSH5rPOSymnueRiOrHL4hmGidaUhmGByvbaKopKT/XZdRf2bZDoS74oLyloXCfroD/3fJLmVESWA==
   dependencies:
-    "@pefish/js-error" "^0.1.1"
+    "@pefish/js-error" "^0.1.2"
     bignumber.js "^8.1.1"
 
-"@pefish/js-node-assist@^0.6.9":
-  version "0.6.9"
-  resolved "https://registry.yarnpkg.com/@pefish/js-node-assist/-/js-node-assist-0.6.9.tgz#60d50c0f82469441d4cd22b51f2645585170f414"
-  integrity sha512-acqJwvoBDVem8hqxJ7ctdPoRuuyPLXEFjPeIzQy12x+zs4ktlYqQx0p+cH61pILRM4Z0RDDeK6MZYRSUDp6lAA==
+"@pefish/js-util-config@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@pefish/js-util-config/-/js-util-config-0.2.1.tgz#d6d2a55a001f0a4884c5688078107e4d924573cf"
+  integrity sha512-TftBcJzlf5rKLjhT6TYuzj0ieDs2++rqkDosS5nbHtt/uzl+KgFcO5bmADr1T814x76CtXQu5e+IBIqVSaeV+g==
   dependencies:
-    "@pefish/js-error" "^0.1.1"
-    bignumber.js "^8.1.1"
-
-"@pefish/js-util-config@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@pefish/js-util-config/-/js-util-config-0.0.2.tgz#f019727144609bb11580ad34daba1c00ad5c56cd"
-  integrity sha512-fjq2m3YQcImQtB/8MfrihWuWtXHRydxwLw2oNoQGJJaHS1rHH3qoQs9+kbnJdTSwsttoD+GXbhVbrs61l2ydCA==
-  dependencies:
-    "@pefish/js-error" "^0.1.1"
-    "@pefish/js-node-assist" "^0.6.6"
+    js-yaml "^3.13.1"
 
 "@pefish/js-util-starter@^0.0.7":
   version "0.0.7"
@@ -107,6 +103,13 @@ arg@^4.1.0:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/arg/-/arg-4.1.1.tgz#485f8e7c390ce4c5f78257dbea80d4be11feda4c"
   integrity sha512-SlmP3fEA88MBv0PypnXZ8ZfJhwmDeIE3SP71j37AiXQBXYosPV0x6uISAaHYSlSVhmHOVkomen0tbGk6Anlebw==
+
+argparse@^1.0.7:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/argparse/-/argparse-1.0.10.tgz#bcd6791ea5ae09725e17e5ad988134cd40b3d911"
+  integrity sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==
+  dependencies:
+    sprintf-js "~1.0.2"
 
 arr-diff@^4.0.0:
   version "4.0.0"
@@ -451,6 +454,11 @@ escape-string-regexp@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
+
+esprima@^4.0.0:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/esprima/-/esprima-4.0.1.tgz#13b04cdb3e6c5d19df91ab6987a8695619b0aa71"
+  integrity sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A==
 
 execa@^0.7.0:
   version "0.7.0"
@@ -898,6 +906,14 @@ isobject@^3.0.0, isobject@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
   integrity sha1-TkMekrEalzFjaqH5yNHMvP2reN8=
+
+js-yaml@^3.13.1:
+  version "3.13.1"
+  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.13.1.tgz#aff151b30bfdfa8e49e05da22e7415e9dfa37847"
+  integrity sha512-YfbcO7jXDdyj0DGxYVSlSeQNHbD7XPWvrVWeVUujrQEoZzWJIRrCPoyk6kL6IAjAG2IolMK4T0hNUe0HOUs5Jw==
+  dependencies:
+    argparse "^1.0.7"
+    esprima "^4.0.0"
 
 kind-of@^3.0.2, kind-of@^3.0.3, kind-of@^3.2.0:
   version "3.2.2"
@@ -1519,6 +1535,11 @@ split-string@^3.0.1, split-string@^3.0.2:
   integrity sha512-NzNVhJDYpwceVVii8/Hu6DKfD2G+NrQHlS/V/qgv763EYudVwEcMQNxd2lh+0VrUByXN/oJkl5grOhYWvQUYiw==
   dependencies:
     extend-shallow "^3.0.0"
+
+sprintf-js@~1.0.2:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
+  integrity sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
 
 static-extend@^0.1.1:
   version "0.1.2"

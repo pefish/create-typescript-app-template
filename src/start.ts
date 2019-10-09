@@ -13,9 +13,9 @@ declare global {
 }
 
 Starter.startAsync(async () => {
-  global.config = ConfigUtil.loadConfig()
+  global.config = ConfigUtil.loadJsonConfig()
   global.debug = global.config[`env`] !== 'prod'
-  global.logger.info(`test`)
+  global.logger.info(global.config)
 }, null, true)
 
 

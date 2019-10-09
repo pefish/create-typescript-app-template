@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "description": "template_description",
   "dependencies": {
-    "@pefish/js-node-assist": "^0.6.9",
-    "@pefish/js-util-config": "^0.0.2",
+    "@pefish/js-node-assist": "^0.6.11",
+    "@pefish/js-util-config": "^0.2.1",
     "@pefish/js-util-starter": "^0.0.7"
   },
   "scripts": {
