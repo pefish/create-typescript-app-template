@@ -6,7 +6,7 @@ declare global {
   namespace NodeJS {
     interface Global {
       logger: any,
-      config: object;
+      config: {[x: string]: any};
       debug: boolean;
     }
   }
@@ -14,7 +14,7 @@ declare global {
 
 Starter.startAsync(async () => {
   global.config = ConfigUtil.loadYamlConfig()
-  global.debug = global.config[`env`] !== 'prod'
+  global.debug = global.config.env !== 'prod'
   global.logger.info(global.config)
 }, null, true)
 
