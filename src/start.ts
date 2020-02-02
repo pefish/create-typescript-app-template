@@ -12,15 +12,15 @@ declare global {
   }
 }
 
-Starter.startAsync(async () => {
-  global.config = ConfigUtil.loadYamlConfig()
-  global.debug = global.config.env !== 'prod'
-  if (global.debug) {
-    global.logger = new Log4js()
-  } else {
-    global.logger = new GcloudLogging()
-  }
+global.config = ConfigUtil.loadYamlConfig()
+global.debug = global.config.env !== 'prod'
+if (global.debug) {
+  global.logger = new Log4js()
+} else {
+  global.logger = new GcloudLogging()
+}
 
+Starter.startAsync(async () => {
   global.logger.info(global.config)
 }, null, true)
 
