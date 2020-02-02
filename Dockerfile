@@ -8,5 +8,5 @@ FROM node:10-alpine
 WORKDIR /app
 COPY --from=builder /app/node_modules /app/node_modules
 COPY --from=builder /app/lib /app/lib
-ENV NODE_CONFIG /app/config/pom.json
-ENV NODE_SECRET /app/secret/pom.json
+ENV NODE_CONFIG /app/config/pom.yaml
+ENV NODE_SECRET /app/secret/pom.yaml
