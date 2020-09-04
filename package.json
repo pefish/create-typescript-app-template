@@ -4,9 +4,9 @@
   "description": "template_description",
   "author": "pefish <pefish@qq.com>",
   "dependencies": {
-    "@pefish/js-helper-logger": "^0.0.9",
-    "@pefish/js-node-assist": "^0.6.15",
-    "@pefish/js-util-config": "^0.2.3",
+    "@pefish/js-helper-logger": "^1.0.0",
+    "@pefish/js-node-assist": "^0.6.17",
+    "@pefish/js-util-config": "^0.2.4",
     "@pefish/js-util-starter": "^0.0.8"
   },
   "appName": "template_name",
@@ -15,7 +15,7 @@
   },
   "scripts": {
     "build": "rm -rf lib && tsc",
-    "start": "NODE_CONFIG=`pwd`/config/local.yaml NODE_SECRET=`pwd`/secret/local.yaml nodemon --ignore tests --exec ts-node src/start.ts",
+    "start": "NODE_CONFIG=`pwd`/config/local.yaml NODE_SECRET=`pwd`/secret/local.yaml ts-node src/start.ts",
     "test": "mocha --timeout 20000 --require ts-node/register src/**/*.test.ts",
     "t": "mocha --timeout 20000 --require ts-node/register",
     "docker": "docker build -t template_name ."
@@ -23,9 +23,8 @@
   "devDependencies": {
     "@types/chai": "^4.1.7",
     "@types/mocha": "^5.2.6",
-    "@types/node": "^11.13.7",
-    "nodemon": "^1.19.1",
-    "ts-node": "^8.1.0",
-    "typescript": "^3.4.5"
+    "@types/node": "^14.6.4",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.2"
   }
 }
