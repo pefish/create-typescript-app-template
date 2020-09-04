@@ -11,7 +11,7 @@
   },
   "appName": "template_name",
   "bin": {
-    "template_name": "./lib/start.js"
+    "template_name": "app.js"
   },
   "scripts": {
     "build": "rm -rf lib && tsc",
