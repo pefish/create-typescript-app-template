@@ -2,11 +2,16 @@
   "name": "template_name",
   "version": "0.0.1",
   "description": "template_description",
+  "author": "pefish <pefish@qq.com>",
   "dependencies": {
     "@pefish/js-helper-logger": "^0.0.9",
     "@pefish/js-node-assist": "^0.6.15",
     "@pefish/js-util-config": "^0.2.3",
     "@pefish/js-util-starter": "^0.0.8"
+  },
+  "appName": "template_name",
+  "bin": {
+    "template_name": "./lib/start.js"
   },
   "scripts": {
     "build": "rm -rf lib && tsc",
