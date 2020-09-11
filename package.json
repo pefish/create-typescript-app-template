@@ -4,10 +4,9 @@
   "description": "template_description",
   "author": "pefish <pefish@qq.com>",
   "dependencies": {
-    "@pefish/js-helper-logger": "^1.0.0",
-    "@pefish/js-node-assist": "^0.6.17",
+    "@pefish/js-node-assist": "^0.6.18",
     "@pefish/js-util-config": "^0.2.4",
-    "@pefish/js-util-starter": "^0.0.8"
+    "@pefish/js-util-starter": "^1.0.0"
   },
   "appName": "template_name",
   "bin": {
