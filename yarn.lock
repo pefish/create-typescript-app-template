@@ -7,13 +7,12 @@
   resolved "https://registry.yarnpkg.com/@pefish/js-error/-/js-error-0.1.2.tgz#89913c01f960318fa5108e79d99c27ad90b4430f"
   integrity sha512-JFM3pW2MhGwOwdaSfUw79DsE52oh27meYzL07B/gkX7+oF0ByVs1/BuEFMBaTk5RMnMijN0lCEuCpfZgcShO3A==
 
-"@pefish/js-node-assist@^0.6.18":
-  version "0.6.18"
-  resolved "https://registry.yarnpkg.com/@pefish/js-node-assist/-/js-node-assist-0.6.18.tgz#d9d945b32f1e62d50ca238186660041e1b32e019"
-  integrity sha512-m/B8ABX0ArXw0mHGdp07Mx7XQdXekstZU6Pojm1lzqbcGGyj+zGW72BIZV86wH+zXZP5QnKxYfTzOtKQrCLMMQ==
+"@pefish/js-node-assist@^2.0.8":
+  version "2.0.8"
+  resolved "https://registry.yarnpkg.com/@pefish/js-node-assist/-/js-node-assist-2.0.8.tgz#482e598f27396a0e6f837924e634c1e1be407bac"
+  integrity sha512-DUKmtlZ7SRSptya4lkU2CgkvYewfir8bu15HseqJrbFmeBnhTMpcvA/XFLZr5IV6NxntWPlP4CrKBJOc7CgNew==
   dependencies:
-    "@pefish/js-error" "^0.1.2"
-    bignumber.js "^8.1.1"
+    bignumber.js "^9.0.1"
 
 "@pefish/js-util-config@^0.2.4":
   version "0.2.4"
@@ -56,10 +55,10 @@ argparse@^1.0.7:
   dependencies:
     sprintf-js "~1.0.2"
 
-bignumber.js@^8.1.1:
-  version "8.1.1"
-  resolved "https://registry.yarnpkg.com/bignumber.js/-/bignumber.js-8.1.1.tgz#4b072ae5aea9c20f6730e4e5d529df1271c4d885"
-  integrity sha512-QD46ppGintwPGuL1KqmwhR0O+N2cZUg8JG/VzwI2e28sM9TqHjQB10lI4QAaMHVbLzwVLLAwEglpKPViWX+5NQ==
+bignumber.js@^9.0.1:
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/bignumber.js/-/bignumber.js-9.0.1.tgz#8d7ba124c882bfd8e43260c67475518d0689e4e5"
+  integrity sha512-IdZR9mh6ahOBv/hYGiXyVuyCetmGJhtYkqLBpTStdhEGjegpPlUawydyaF3pbIOFynJTpllEs+NP+CS9jKFLjA==
 
 buffer-from@^1.0.0:
   version "1.1.1"

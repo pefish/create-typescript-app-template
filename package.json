@@ -4,7 +4,7 @@
   "description": "template_description",
   "author": "pefish <pefish@qq.com>",
   "dependencies": {
-    "@pefish/js-node-assist": "^0.6.18",
+    "@pefish/js-node-assist": "^2.0.8",
     "@pefish/js-util-config": "^0.2.4",
     "@pefish/js-util-starter": "^1.0.0"
   },
