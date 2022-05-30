@@ -22,7 +22,8 @@
       "node_modules/@pefish"
     ],
     "downlevelIteration": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "skipLibCheck": true
   },
   "include": [
     "src/**/*"
