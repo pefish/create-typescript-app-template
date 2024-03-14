@@ -1,31 +1,31 @@
 {
-  "name": "template_name",
+  "name": "app-name",
   "version": "0.0.1",
-  "description": "template_description",
+  "description": "app-description",
   "author": "pefish <pefish@qq.com>",
   "dependencies": {
     "@pefish/js-node-assist": "^2.0.8",
     "@pefish/js-util-config": "^0.2.4",
     "@pefish/js-util-starter": "^1.0.0"
   },
-  "appName": "template_name",
+  "appName": "app-name",
   "bin": {
-    "template_name": "app.js"
+    "app-name": "app.js"
   },
   "scripts": {
     "build": "rm -rf lib && tsc",
-    "start": "NODE_CONFIG=`pwd`/config/local.yaml NODE_SECRET=`pwd`/secret/local.yaml ts-node src/start.ts",
+    "start": "NODE_CONFIG=`pwd`/config/local.yaml ts-node src/start.ts",
     "test": "mocha --timeout 20000 --exit --require ts-node/register src/**/*.test.ts",
     "t": "mocha --timeout 20000 --exit --require ts-node/register",
-    "docker": "docker build -t template_name .",
-    "prepublish": "yarn test && yarn build"
+    "docker": "docker build -t app-name .",
+    "prepublish": "npm run test && npm run build"
   },
   "devDependencies": {
-    "@types/chai": "^4.1.7",
-    "@types/mocha": "^5.2.6",
-    "@types/node": "^14.6.4",
-    "mocha": "^10.0.0",
-    "ts-node": "^9.0.0",
-    "typescript": "^4.0.2"
+    "@types/chai": "^4.3.12",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^14.18.63",
+    "mocha": "^10.3.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
   }
 }
