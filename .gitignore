@@ -70,3 +70,5 @@ config/*chain.json
 **/**/dev.yaml
 **/**/prod.yaml
 .vscode
+
+.env

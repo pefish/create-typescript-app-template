@@ -1,22 +1,25 @@
-import '@pefish/js-node-assist'
-import Starter from '@pefish/js-util-starter'
-import ConfigUtil from '@pefish/js-util-config'
+import "@pefish/js-node-assist";
+import Starter from "@pefish/js-util-starter";
+import "dotenv/config";
+import * as log4js from "log4js";
+
+log4js.configure({
+  appenders: { console: { type: "console" } },
+  categories: { default: { appenders: ["console"], level: "info" } },
+});
+
 declare global {
   namespace NodeJS {
     interface Global {
-      logger: any,
-      config: {[x: string]: any};
+      logger: log4js.Logger;
       debug: boolean;
     }
   }
 }
 
-global.config = ConfigUtil.loadYamlConfig()
-global.debug = global.config.env !== 'prod'
-global.logger = console
+global.debug = process.env["LOG_LEVEL"] == "debug";
+global.logger = log4js.getLogger();
 
 Starter.startAsync(async () => {
-  global.logger.info(global.config)
-})
-
-
+  global.logger.info(process.env);
+});

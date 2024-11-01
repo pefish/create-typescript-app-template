@@ -1,12 +1,13 @@
-FROM node:10-stretch as builder
+FROM node:lts-stretch AS builder
 WORKDIR /app
 ADD . .
-RUN mkdir -p /app/log
-RUN yarn install --network-timeout 100000 && yarn build
+RUN npm install && npm run build
 
-FROM node:10-alpine
+FROM node:lts-alpine
 WORKDIR /app
 COPY --from=builder /app/node_modules /app/node_modules
 COPY --from=builder /app/lib /app/lib
-ENV NODE_CONFIG /app/config/pom.yaml
-ENV NODE_SECRET /app/secret/pom.yaml
+CMD ["node", "/app/lib/start.js"]
+
+# docker build --progress=plain -t app-name:v0.0.1 .
+# docker run -ti --name app-name app-name:v0.0.1
