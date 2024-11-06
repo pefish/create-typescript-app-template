@@ -11,3 +11,4 @@ CMD ["node", "/app/lib/start.js"]
 
 # docker build --progress=plain -t app-name:v0.0.1 .
 # docker run -ti --name app-name app-name:v0.0.1
+# docker buildx build --progress=plain --platform linux/amd64 --push -t app-name:v0.0.1 .

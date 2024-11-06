@@ -22,4 +22,4 @@ global.logger = log4js.getLogger();
 
 Starter.startAsync(async () => {
   global.logger.info(process.env);
-});
+}, false);
