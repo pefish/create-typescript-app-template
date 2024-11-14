@@ -23,13 +23,13 @@
     "prepublish": "check-node-version --npm \">=4\" || npm run prepare"
   },
   "devDependencies": {
-    "@types/chai": "^4.3.12",
-    "@types/mocha": "^5.2.7",
-    "@types/node": "^14.18.63",
-    "check-node-version": "^1.1.2",
-    "mocha": "^10.3.0",
-    "ts-node": "^10.9.1",
-    "typescript": "^5.0.4",
+    "@types/chai": "^5.0.1",
+    "@types/mocha": "^10.0.9",
+    "@types/node": "^22.9.0",
+    "check-node-version": "^4.2.1",
+    "mocha": "^10.8.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3",
     "tslint": "^6.1.3"
   }
 }
