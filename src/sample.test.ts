@@ -1,4 +1,1 @@
-
-describe("Sample", ()=>{
-    
-})
+describe("Sample", () => {});
