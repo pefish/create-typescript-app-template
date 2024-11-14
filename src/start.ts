@@ -2,11 +2,7 @@ import { Logger } from "@pefish/js-logger";
 import Starter, { StartArgs } from "@pefish/js-starter";
 
 declare global {
-  namespace NodeJS {
-    interface Global {
-      logger: Logger;
-    }
-  }
+  var logger: Logger;
 }
 
 async function main(args: StartArgs) {
