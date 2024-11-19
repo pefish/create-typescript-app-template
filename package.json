@@ -4,9 +4,8 @@
   "description": "app-description",
   "author": "pefish <pefish@qq.com>",
   "dependencies": {
-    "@pefish/js-logger": "^1.0.4",
-    "@pefish/js-starter": "^1.0.0",
-    "dotenv": "^16.4.5"
+    "@pefish/js-logger": "^1.0.5",
+    "@pefish/js-starter": "^1.0.0"
   },
   "appName": "app-name",
   "bin": {
