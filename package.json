@@ -5,7 +5,7 @@
   "author": "pefish <pefish@qq.com>",
   "dependencies": {
     "@pefish/js-logger": "^1.0.5",
-    "@pefish/js-starter": "^1.0.1"
+    "@pefish/js-starter": "^1.0.2"
   },
   "appName": "app-name",
   "bin": {
