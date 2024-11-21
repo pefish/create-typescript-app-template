@@ -1,10 +1,11 @@
 {
   "compilerOptions": {
+    "strict": true,
     "allowJs": false,
     "module": "commonjs",
     "esModuleInterop": true,
     "target": "es2020",
-    "noImplicitAny": false,
+    "noImplicitAny": true,
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "sourceMap": true,
