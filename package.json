@@ -19,7 +19,7 @@
     "docker": "docker build -t app-name .",
     "tslint": "tslint -c tslint.json -p tsconfig.json",
     "prepare": "npm run test && npm run build",
-    "prepublish": "check-node-version --npm \">=4\" || npm run prepare"
+    "prepublishOnly": "check-node-version --npm \">=4\" || npm run prepare"
   },
   "devDependencies": {
     "@types/chai": "^5.0.1",
