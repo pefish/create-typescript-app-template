@@ -6,8 +6,8 @@ declare global {
 }
 
 async function main(args: StartArgs) {
-  global.logger = args.logger;
-  global.logger.info(process.env.LOG_LEVEL);
+  globalThis.logger = args.logger;
+  globalThis.logger.info(process.env.LOG_LEVEL);
 }
 
 async function onExited(err: Error) {}
