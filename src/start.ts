@@ -8,6 +8,10 @@ declare global {
 async function main(args: StartArgs) {
   globalThis.logger = args.logger;
   globalThis.logger.info(process.env.LOG_LEVEL);
+
+  // while (!args.abortSignal.aborted) {
+  //   await new Promise((resolve) => setTimeout(resolve, 1000));
+  // }
 }
 
 async function onExited(err: Error) {}
